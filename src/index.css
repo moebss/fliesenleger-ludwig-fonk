@@ -2,9 +2,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-stone-gold: #a88244;
-  --color-stone-hover: #947137;
-  --color-[#a88244]: #a88244;
+  --color-petrol: #2d7d8a;
+  --color-petrol-hover: #246a75;
+  --color-petrol-light: #c4e3e8;
   --color-travertine: #f7f5f0;
   --color-slate-deep: #1e2229;
 }
@@ -29,20 +29,20 @@
 .tile-grid-backdrop-light {
   background-color: #f7f5f0;
   background-image: 
-    linear-gradient(to right, rgba(168, 130, 68, 0.08) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(168, 130, 68, 0.08) 1px, transparent 1px);
+    linear-gradient(to right, rgba(45, 125, 138, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(45, 125, 138, 0.07) 1px, transparent 1px);
   background-size: 48px 48px;
 }
 
 .craft-card-light {
   background: #ffffff;
-  border: 1px solid rgba(168, 130, 68, 0.2);
+  border: 1px solid rgba(45, 125, 138, 0.18);
   box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(255, 255, 255, 0.8) inset;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .craft-card-light:hover {
-  border-color: rgba(168, 130, 68, 0.6);
-  box-shadow: 0 20px 40px -12px rgba(168, 130, 68, 0.18);
+  border-color: rgba(45, 125, 138, 0.5);
+  box-shadow: 0 20px 40px -12px rgba(45, 125, 138, 0.15);
   transform: translateY(-3px);
 }
