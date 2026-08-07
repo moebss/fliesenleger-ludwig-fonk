@@ -2,18 +2,18 @@
 @import "tailwindcss";
 
 @theme {
-  --color-sandstone: #c8a264;
-  --color-sandstone-hover: #b89254;
-  --color-[#c8a264]: #c8a264;
-  --color-slate-dark: #101216;
-  --color-slate-card: #161920;
+  --color-stone-gold: #a88244;
+  --color-stone-hover: #947137;
+  --color-[#a88244]: #a88244;
+  --color-travertine: #f7f5f0;
+  --color-slate-deep: #1e2229;
 }
 
 @layer base {
   body {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    background-color: #101216;
-    color: #e4e4e7;
+    background-color: #f7f5f0;
+    color: #27272a;
     text-wrap: pretty;
   }
 
@@ -25,24 +25,24 @@
   }
 }
 
-/* Sub 5i Signature: Subtle Tile Joint Net Texture */
-.tile-grid-backdrop {
-  background-color: #101216;
+/* Sub 5i Signature: Light Travertine Tile Grid Pattern */
+.tile-grid-backdrop-light {
+  background-color: #f7f5f0;
   background-image: 
-    linear-gradient(to right, rgba(200, 162, 100, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(200, 162, 100, 0.04) 1px, transparent 1px);
-  background-size: 40px 40px;
+    linear-gradient(to right, rgba(168, 130, 68, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(168, 130, 68, 0.08) 1px, transparent 1px);
+  background-size: 48px 48px;
 }
 
-.craft-card {
-  background: #161920;
-  border: 1px solid rgba(200, 162, 100, 0.2);
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.02) inset;
+.craft-card-light {
+  background: #ffffff;
+  border: 1px solid rgba(168, 130, 68, 0.2);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(255, 255, 255, 0.8) inset;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.craft-card:hover {
-  border-color: rgba(200, 162, 100, 0.6);
-  box-shadow: 0 20px 40px -15px rgba(200, 162, 100, 0.25), 0 0 0 1px rgba(200, 162, 100, 0.3) inset;
+.craft-card-light:hover {
+  border-color: rgba(168, 130, 68, 0.6);
+  box-shadow: 0 20px 40px -12px rgba(168, 130, 68, 0.18);
   transform: translateY(-3px);
 }
