@@ -101,15 +101,15 @@ export default function App() {
           <div className="flex items-center justify-between h-20 gap-4">
             
             {/* Logo Brand Area */}
-            <a href="#" className="flex items-center gap-3.5 shrink-0 mr-4 xl:mr-8 group">
-              <div className="w-10 h-10 rounded-xl bg-[#1e2229] text-[#2d7d8a] border border-[#2d7d8a]/30 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
+            <a href="#" className="flex items-center gap-2.5 sm:gap-3.5 min-w-0 group">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#1e2229] text-[#2d7d8a] border border-[#2d7d8a]/30 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform shrink-0">
                 <Layers className="w-5 h-5 stroke-[2.5]" />
               </div>
-              <div>
-                <span className="font-heading text-lg font-black uppercase text-slate-900 block leading-none tracking-tight whitespace-nowrap">
+              <div className="min-w-0">
+                <span className="font-heading text-base sm:text-lg font-black uppercase text-slate-900 block leading-none tracking-tight truncate">
                   LUDWIG <span className="text-[#2d7d8a]">FONK</span>
                 </span>
-                <span className="text-[9px] text-[#2d7d8a] font-extrabold uppercase tracking-widest block mt-0.5 whitespace-nowrap">Fliesenleger-Meisterbetrieb • Kerpen</span>
+                <span className="text-[8.5px] sm:text-[9px] text-[#2d7d8a] font-extrabold uppercase tracking-wider sm:tracking-widest block mt-0.5 truncate">Fliesenleger-Meisterbetrieb • Kerpen</span>
               </div>
             </a>
 
@@ -121,7 +121,7 @@ export default function App() {
             </nav>
 
             {/* Right Action Buttons */}
-            <div className="flex items-center gap-2 sm:gap-3 shrink-0 ml-2 xl:ml-6">
+            <div className="flex items-center gap-2 sm:gap-3 shrink-0 ml-2">
               <a href="tel:02237972504" className="hidden xl:inline-flex items-center gap-2 bg-white hover:bg-stone-100 border border-stone-300 text-slate-900 px-3.5 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all whitespace-nowrap shadow-sm">
                 <Phone className="w-3.5 h-3.5 text-[#2d7d8a]" />
                 <span>02237 972504</span>
@@ -148,7 +148,7 @@ export default function App() {
       </header>
 
       {/* ═══ HERO SECTION (Helligkeit & Lichtdurchflutete Naturstein-Atmosphäre) ═══ */}
-      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden py-20 border-b border-stone-300 tile-grid-backdrop-light">
+      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden py-16 sm:py-20 border-b border-stone-300 tile-grid-backdrop-light">
         <div className="absolute inset-0 z-0">
           <img src={heroBathroom} alt="Fliesenleger Ludwig Fonk Bad Sanierung Kerpen" className="w-full h-full object-cover object-center filter contrast-105 brightness-90" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#f7f5f0] via-[#f7f5f0]/85 to-transparent" />
@@ -156,36 +156,36 @@ export default function App() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="max-w-3xl space-y-8">
-            <div className="flex flex-wrap items-center gap-3">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-white/95 backdrop-blur-md border border-[#2d7d8a]/40 text-[#2d7d8a] text-xs font-bold uppercase tracking-widest shadow-md">
-                <Award className="w-4 h-4 text-[#2d7d8a]" />
-                <span>Meisterhafter Fliesenlegerbetrieb • Kerpen</span>
+          <div className="max-w-3xl space-y-6 sm:space-y-8">
+            <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+              <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 rounded-xl bg-white/95 backdrop-blur-md border border-[#2d7d8a]/40 text-[#2d7d8a] text-[11px] sm:text-xs font-bold uppercase tracking-wider sm:tracking-widest shadow-md">
+                <Award className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#2d7d8a] shrink-0" />
+                <span>Meisterbetrieb Kerpen</span>
               </div>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-slate-900/90 backdrop-blur-md text-white text-xs font-bold uppercase tracking-wider shadow-md">
-                <MapPin className="w-3.5 h-3.5 text-[#2d7d8a]" />
+              <div className="inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 rounded-xl bg-slate-900/90 backdrop-blur-md text-white text-[11px] sm:text-xs font-bold uppercase tracking-wider shadow-md">
+                <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#2d7d8a] shrink-0" />
                 <span>Concordiastr. 11</span>
               </div>
             </div>
 
-            <h1 className="font-heading text-3xl sm:text-5xl lg:text-6xl uppercase tracking-tight text-slate-900 leading-[1.05] font-black drop-shadow-sm">
-              MEISTERHAFTE FLIESEN- <br />
+            <h1 className="font-heading text-2xl sm:text-5xl lg:text-6xl uppercase tracking-tight text-slate-900 leading-[1.1] font-black drop-shadow-sm break-words">
+              MEISTERHAFTE FLIESEN- <br className="hidden sm:inline" />
               <span className="text-[#2d7d8a] drop-shadow-sm">& NATURSTEINARBEITEN.</span>
             </h1>
 
-            <p className="text-slate-700 text-base sm:text-lg font-medium leading-relaxed max-w-2xl">
+            <p className="text-slate-700 text-sm sm:text-base lg:text-lg font-medium leading-relaxed max-w-2xl">
               Ihr erfahrener Fachbetrieb in Kerpen für Komplettbad-Sanierungen, barrierefreie Walk-In Duschen, exklusive XXL-Großformatfliesen und hochwertige Natursteinverlegung im Innen- & Außenbereich.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
-              <a href="#contact-section" className="bg-[#2d7d8a] hover:bg-[#246a75] text-white font-extrabold px-8 py-4 rounded-xl text-xs uppercase tracking-wider shadow-lg shadow-[#2d7d8a]/30 transition-all hover:-translate-y-0.5 flex items-center justify-center gap-3 group">
-                <Send className="w-4 h-4" />
-                <span>Kostenloses Festpreis-Angebot Anfragen</span>
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-2">
+              <a href="#contact-section" className="bg-[#2d7d8a] hover:bg-[#246a75] text-white font-extrabold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl text-xs uppercase tracking-wider shadow-lg shadow-[#2d7d8a]/30 transition-all hover:-translate-y-0.5 flex items-center justify-center gap-2 sm:gap-3 group">
+                <Send className="w-4 h-4 shrink-0" />
+                <span>Kostenloses Festpreis-Angebot</span>
+                <ArrowRight className="w-4 h-4 shrink-0 group-hover:translate-x-1 transition-transform" />
               </a>
-              <a href="tel:02237972504" className="bg-[#1e2229] hover:bg-black text-white font-bold px-7 py-4 rounded-xl text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md">
-                <Phone className="w-4 h-4 text-[#2d7d8a]" />
-                <span>02237 972504 Anrufen</span>
+              <a href="tel:02237972504" className="bg-[#1e2229] hover:bg-black text-white font-bold px-5 sm:px-7 py-3.5 sm:py-4 rounded-xl text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-md">
+                <Phone className="w-4 h-4 text-[#2d7d8a] shrink-0" />
+                <span>02237 972504</span>
               </a>
             </div>
 
@@ -222,7 +222,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-12 gap-12 items-center">
             
-            <div className="lg:col-span-5">
+            <div className="lg:col-span-6">
               <div className="relative rounded-3xl overflow-hidden border border-[#2d7d8a]/30 shadow-xl aspect-[4/5] bg-white">
                 <img src={tileWork} alt="Fliesenleger Ludwig Fonk Handwerk Kerpen" className="w-full h-full object-cover filter contrast-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1e2229]/80 via-transparent to-transparent" />
@@ -235,7 +235,7 @@ export default function App() {
               </div>
             </div>
 
-            <div className="lg:col-span-7 space-y-6">
+            <div className="lg:col-span-6 space-y-6">
               <span className="text-[#2d7d8a] font-bold text-xs uppercase tracking-widest block">Über den Fachbetrieb</span>
               <h2 className="font-heading text-3xl sm:text-5xl uppercase tracking-tight text-slate-900 font-black">
                 FLIESENLEGER LUDWIG FONK – <span className="text-[#2d7d8a]">HANDWERK AUS KERPEN.</span>
@@ -392,7 +392,7 @@ export default function App() {
           <div className="grid lg:grid-cols-12 gap-12 items-start">
             
             {/* Contact Details & Map */}
-            <div className="lg:col-span-5 space-y-8 bg-[#1e2229] text-white rounded-3xl p-8 shadow-xl">
+            <div className="lg:col-span-6 space-y-8 bg-[#1e2229] text-white rounded-3xl p-8 shadow-xl">
               <div className="space-y-6 text-sm text-stone-300">
                 <h3 className="font-heading text-2xl font-black text-white uppercase border-b border-stone-700 pb-4">
                   LUDWIG FONK FLIESENLEGER
@@ -433,7 +433,7 @@ export default function App() {
             </div>
 
             {/* Permanent Inline Form */}
-            <div className="lg:col-span-7 bg-white border border-stone-300 rounded-3xl p-8 shadow-xl">
+            <div className="lg:col-span-6 bg-white border border-stone-300 rounded-3xl p-8 shadow-xl">
               <h3 className="font-heading text-2xl font-black text-slate-900 uppercase mb-2">KOSTENLOSES ANGEBOT ANFORDERN</h3>
               <p className="text-xs text-slate-500 mb-6">Füllen Sie das Formular aus – wir melden uns innerhalb von 24 Stunden bei Ihnen zurück.</p>
               
@@ -631,13 +631,13 @@ export default function App() {
       )}
 
       {/* ═══ MOBILE STICKY BOTTOM ACTION BAR ═══ */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-lg p-3 border-t border-stone-300 flex items-center justify-between gap-3 lg:hidden shadow-2xl">
-        <a href="tel:02237972504" className="flex-1 bg-[#1e2229] hover:bg-black text-white font-bold py-3 px-3 rounded-xl text-xs uppercase tracking-wider flex items-center justify-center gap-2">
-          <Phone className="w-4 h-4 text-[#2d7d8a]" />
+      <div className="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-lg p-2.5 border-t border-stone-300 flex items-center justify-between gap-2 lg:hidden shadow-2xl">
+        <a href="tel:02237972504" className="flex-1 bg-[#1e2229] hover:bg-black text-white font-bold py-3 px-2 rounded-xl text-[11px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-1.5">
+          <Phone className="w-3.5 h-3.5 text-[#2d7d8a] shrink-0" />
           <span>02237 972504</span>
         </a>
-        <a href="#contact-section" className="flex-1 bg-[#2d7d8a] hover:bg-[#246a75] text-white font-extrabold py-3 px-3 rounded-xl text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-md shadow-[#2d7d8a]/20">
-          <Send className="w-4 h-4" />
+        <a href="#contact-section" className="flex-1 bg-[#2d7d8a] hover:bg-[#246a75] text-white font-extrabold py-3 px-2 rounded-xl text-[11px] sm:text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 shadow-md shadow-[#2d7d8a]/20">
+          <Send className="w-3.5 h-3.5 shrink-0" />
           <span>Angebot</span>
         </a>
       </div>
