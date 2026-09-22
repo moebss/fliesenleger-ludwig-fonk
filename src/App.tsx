@@ -72,10 +72,10 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#f7f5f0] text-slate-800 selection:bg-[#2d7d8a] selection:text-white font-['Plus_Jakarta_Sans',sans-serif]">
+    <div className="min-h-screen w-full max-w-full overflow-x-hidden bg-[#f7f5f0] text-slate-800 selection:bg-[#2d7d8a] selection:text-white font-['Plus_Jakarta_Sans',sans-serif]">
       
       {/* ═══ HEADER (Helles Travertin Architekten-Design) ═══ */}
-      <header className="sticky top-0 z-50 backdrop-blur-xl bg-[#f7f5f0]/95 border-b border-stone-300/80 shadow-sm">
+      <header className="sticky top-0 z-50 backdrop-blur-xl bg-[#f7f5f0]/95 border-b border-stone-300/80 shadow-sm w-full">
         {/* Top Bar */}
         <div className="hidden lg:block bg-[#1e2229] py-2 px-6 text-xs text-stone-300 border-b border-stone-700">
           <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -97,19 +97,19 @@ export default function App() {
         </div>
 
         {/* Main Navigation Container */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20 gap-4">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16 sm:h-20 gap-2 sm:gap-4">
             
             {/* Logo Brand Area */}
-            <a href="#" className="flex items-center gap-2.5 sm:gap-3.5 min-w-0 group">
+            <a href="#" className="flex items-center gap-2 sm:gap-3 flex-1 min-w-0 mr-2 group">
               <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#1e2229] text-[#2d7d8a] border border-[#2d7d8a]/30 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform shrink-0">
                 <Layers className="w-5 h-5 stroke-[2.5]" />
               </div>
               <div className="min-w-0">
-                <span className="font-heading text-base sm:text-lg font-black uppercase text-slate-900 block leading-none tracking-tight truncate">
+                <span className="font-heading text-sm sm:text-lg font-black uppercase text-slate-900 block leading-none tracking-tight truncate">
                   LUDWIG <span className="text-[#2d7d8a]">FONK</span>
                 </span>
-                <span className="text-[8.5px] sm:text-[9px] text-[#2d7d8a] font-extrabold uppercase tracking-wider sm:tracking-widest block mt-0.5 truncate">Fliesenleger-Meisterbetrieb • Kerpen</span>
+                <span className="text-[8px] sm:text-[9px] text-[#2d7d8a] font-extrabold uppercase tracking-wider sm:tracking-widest block mt-0.5 truncate">Meisterbetrieb • Kerpen</span>
               </div>
             </a>
 
